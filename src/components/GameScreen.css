@@ -1,0 +1,100 @@
+.game h1 {
+    font-size: 2.5em;
+}
+
+.game p span {
+    color: #880000;
+}
+
+.points {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.tip span {
+    color: #880000;
+}
+
+.wordContainer {
+    margin: 1.5em;
+    padding: 1.5em;
+    border: 20px solid #880000;
+    display: flex;
+}
+
+.letter, .blankSquare {
+    font-size: 70px;
+    line-height: 1.5;
+    border: 3px solid #000;
+    height: 100px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.letterContainer p {
+    margin-bottom: 1.2em;
+}
+
+.letterContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letterContainer input {
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .game {
+        height: 100vh;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game h1 {
+        font-size: 1.5em;
+    }
+    
+    .wordContainer {
+        width: 100%;
+        margin: 2em;
+        padding: 1em;
+        border: 5px solid #880000;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .letter, .blankSquare {
+        font-size: 35px;
+        border: 3px solid #000;
+        height: 50px;
+        width: 50px;
+        margin: 5px 10px;
+    }
+
+    .letterContainer input {
+        height: 40px;
+        width: 40px;
+    }
+
+    .wrongLettersContainer {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+}
